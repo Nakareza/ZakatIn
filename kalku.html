@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zakatin - Kalkulator Zakat</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Amiri&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <div class="scroll-wrapper">
+        <div class="container">
+            <div class="header">
+                <h1><i class="fas fa-mosque"></i> Zakatin</h1>
+                <p class="subtitle">Kalkulator Zakat Multiaset</p>
+            </div>
+            <form id="zakatForm">
+                <!-- Harta Tunai -->
+                <div class="input-group">
+                    <label for="cash"><i class="fas fa-wallet"></i> Harta Tunai (Rp):</label>
+                    <input type="number" id="cash" placeholder="Masukkan jumlah harta tunai">
+                </div>
+                
+                <!-- Emas -->
+                <div class="input-group">
+                    <label for="gold"><i class="fas fa-gem"></i> Jumlah Emas (gram):</label>
+                    <input type="number" id="gold" placeholder="Masukkan jumlah emas">
+                </div>
+                
+                <!-- Perak -->
+                <div class="input-group">
+                    <label for="silver"><i class="fas fa-coins"></i> Jumlah Perak (gram):</label>
+                    <input type="number" id="silver" placeholder="Masukkan jumlah perak">
+                </div>
+                
+                <!-- Tabungan -->
+                <div class="input-group">
+                    <label for="savings"><i class="fas fa-piggy-bank"></i> Tabungan (Rp):</label>
+                    <input type="number" id="savings" placeholder="Masukkan jumlah tabungan">
+                </div>
+                
+                <!-- Saham -->
+                <div class="input-group">
+                    <label for="stocks"><i class="fas fa-chart-line"></i> Nilai Saham (Rp):</label>
+                    <input type="number" id="stocks" placeholder="Masukkan nilai saham">
+                </div>
+                
+                <!-- Properti -->
+                <div class="input-group">
+                    <label for="property"><i class="fas fa-home"></i> Nilai Properti (Rp):</label>
+                    <input type="number" id="property" placeholder="Masukkan nilai properti">
+                </div>
+                
+                <!-- Hewan Ternak -->
+                <div class="input-group">
+                    <label for="livestock"><i class="fas fa-paw"></i> Jumlah Hewan Ternak:</label>
+                    <input type="number" id="livestock" placeholder="Masukkan jumlah hewan ternak">
+                </div>
+                
+                <!-- Hasil Pertanian -->
+                <div class="input-group">
+                    <label for="agriculture"><i class="fas fa-seedling"></i> Hasil Pertanian (kg):</label>
+                    <input type="number" id="agriculture" placeholder="Masukkan hasil pertanian">
+                </div>
+                
+                <button type="submit"><i class="fas fa-calculator"></i> Hitung Zakat</button>
+            </form>
+            <div id="result" class="result">
+                <h2><i class="fas fa-coins"></i> Hasil Perhitungan Zakat</h2>
+                <p id="zakatAmount"></p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
